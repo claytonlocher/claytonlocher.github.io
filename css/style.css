@@ -9,6 +9,10 @@ a, a:hover {
 	text-decoration: none;
 }
 
+#image {
+	width: 200px;
+}
+
 #name-logo {
 	height: 70px;
 	position: relative;
