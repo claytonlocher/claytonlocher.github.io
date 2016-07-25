@@ -1,52 +1,230 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Josefin+Sans:300,400,600|Muli:300,400|Oxygen:400,300|Varela+Round' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Catamaran|Ek+Mukta|Exo+2|Mada:300|Martel+Sans|Mitr|Mukta+Vaani|Offside|Palanquin|Palanquin+Dark|Poppins|Prompt" rel="stylesheet"> -->
 
-	    <title>Clayton Locher</title>
-	</head>
-	<body>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Mukta+Vaani:400,500,600" rel="stylesheet">
 
-		<div class="container-fluid">
-			<div class="row">
-				<img src="img/name.png" id="name-logo">
-			</div>
-			<div class="row" id="social-icons-row">
-				<!-- <span>
-					<img src="img/clayton_locher_sm.jpg" class="img-circle" id="headshot">
-				</span> -->
-				<a href="https://github.com/claytonlocher">
-	     			<span class="social-border">
-	 					<i class="fa fa-github fa-2x fa-inverse social-icon"></i>
-					</span>
-				</a>
-				<a href="https://www.linkedin.com/pub/clayton-locher/6b/311/50b">
-					<span class="social-border">
-	 					<i class="fa fa-linkedin fa-2x fa-inverse social-icon"></i>
-					</span>
-				</a>
-				<a href="https://twitter.com/clayton_locher">
-					<span class="social-border">
-	 					<i class="fa fa-twitter fa-2x fa-inverse social-icon"></i>
-					</span>
-				</a>
-			</div>
-		</div>
 
-    <div id="footer"></div>
+  <title>Clayton Locher</title>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" async></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-	  <script src="js/ga.js"></script>
-		<script src="js/script.js"></script>
-	</body>
+  <script src="https://use.fontawesome.com/804b594a86.js" async></script>
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/hamburgers.css"> -->
 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="social-icons">
+    <ul>
+      <li>
+        <span title="GitHub"><a href="https://github.com/claytonlocher"><i class="fa fa-github fa-2x"></i></a></span>
+      </li>
+      <li>
+        <span title="LinkedIn"><a href="https://www.linkedin.com/in/claytonlocher"><i class="fa fa-linkedin fa-lg"></i></a></span>
+      </li>
+      <li>
+        <span title="Email"><a href="mailto:claytonlocher@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="top-container">
+    <div>
+      <img src="img/clayton-locher-logo-darkblue-alt.svg" id="main-logo">
+    </div>
+    <div class="tagline">
+      <img src="img/tagline-1.svg" alt="">
+    </div>
+
+    <i class="fa fa-angle-down fa-3x down-arrow"></i>
+
+  </div>
+
+  <section class="content-container">
+    <h2 class="section-title">Some of my recent projects</h2>
+
+    <div class="card">
+
+      <header class="project-header">
+        <h3><a href="https://heartlandcookingandliving.herokuapp.com">Heartland Cooking &amp; Living</a></h3>
+        <span class="project-timeline">In Development</span>
+      </header>
+
+      <div class="col">
+
+        <p>For the past couple of months, I've been working very closely with my client to bring his vision for a unique culinary website to life. Although still in development, this project is an ongoing effective learning experience for me and a great opportunity to apply my skills in the following areas:
+        </p>
+        <ul>
+          <li>UI/UX design</li>
+          <li>Server-side MVC architecture</li>
+          <li>Code scalability and maintainability</li>
+          <li>Client-side optimization</li>
+          <li>Workflow automation</li>
+          <li>SEO</li>
+          <li>Brand development and design</li>
+        </ul>
+        <p>Initially, a client-side JavaScript MV* framework such as Angular or React might have been a great fit, due to the high level of desired user interactivity. However, I realized rendering the pages on the client would limit the visibility of content in search engines and on social media, both important factors for the success of the consumer-oriented brand. Therefore, I decided to develop the application using my favorite server-side platform and framework, Node.js and Express, respectively.</p>
+          
+        <p>Also, the flexibility and developer-friendly nature of a cloud NoSQL database lead me to choose Firebase to house the site's data. The Express application talks to Firebase through its Node.js API, gets the dynamic content, and then renders the page on the server and sends it back to the client.</p>
+
+        <a href="https://heartlandcookingandliving.herokuapp.com" class="website-link">See it live <span>&rsaquo;</span></a>
+
+        <span class="tech-stack">
+          <strong>Technology Stack</strong>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>Firebase (NoSQL)</li>
+            <li>Jade</li>
+            <li>Sass</li>
+            <li>jQuery</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+            <li>Gulp</li>
+          </ul>
+        </span>
+
+      </div>
+
+      <div class="col">
+        
+        <a href="img/projects/heartland-cooking-and-living.png">
+          <img src="img/projects/heartland-cooking-and-living.png" alt="Screenshot of the Heartland Cooking and Living website" class="screenshot">
+        </a>
+
+        <a href="img/projects/heartland-cooking-and-living-mobile.png">
+          <img src="img/projects/heartland-cooking-and-living-mobile.png" alt="Screenshot of the Heartland Cooking and Living website" class="screenshot mobile">
+        </a>
+
+        <a href="img/projects/heartland-cooking-and-living-mobile-2.png">
+          <img src="img/projects/heartland-cooking-and-living-mobile-2.png" alt="Screenshot of the Heartland Cooking and Living website" class="screenshot mobile">
+        </a>
+
+      </div>
+
+    </div>
+      
+    <div class="card">
+
+      <header class="project-header">
+        <h3><a href="https://madelynandree.com">Portfolio Website</a></h3>
+        <span class="project-timeline">May - June 2016</span>
+      </header>
+
+      <div class="col">
+        <p>This portfolio website for an accomplished creative and recent college graduate was a fun project to both design and develop. I decided to use plain, old HTML and CSS instead of Jade and Sass (my usual go-to client-side tools) because the website owner already had some knowledge of HTML and CSS and would need to easily edit the site over time. To limit the redundancy in markup and also introduce a single-page application feel without page reloads, I decided to use AJAX with jQuery to simply load each "page" as a snippet of HTML to be placed in the main content area.</p>
+
+        <p>The portfolio itself is heavily focused on visual elements, leading to some challenges with responsive images and page performance. Therefore, I took care in optimizing thumbnails and taking advantage of preloading images with a lightbox jQuery plugin.</p>
+
+        <a href="https://madelynandree.com" class="website-link">madelynandree.com <span>&rsaquo;</span></a>
+
+        <span class="tech-stack">
+          <strong>Technology Stack</strong>
+          <ul>
+            <li>AJAX</li>
+            <li>jQuery</li>
+            <li>CSS3</li>
+            <li>HTML5</li>
+          </ul>
+        </span>
+
+      </div>
+
+      <div class="col">
+        
+        <a href="img/projects/madelyn-andree-portfolio.png">
+          <img src="img/projects/madelyn-andree-portfolio.png" alt="Screenshot of Madelyn Andree's portfolio website" class="screenshot">
+        </a>
+
+        <a href="img/projects/madelyn-andree-portfolio-mobile-2.png">
+          <img src="img/projects/madelyn-andree-portfolio-mobile-2.png" alt="Screenshot of Madelyn Andree's portfolio website" class="screenshot mobile">
+        </a>
+
+        <a href="img/projects/madelyn-andree-portfolio-mobile-3.png">
+          <img src="img/projects/madelyn-andree-portfolio-mobile-3.png" alt="Screenshot of Madelyn Andree's portfolio website" class="screenshot mobile">
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <header class="project-header">
+        <h3><a href="https://projecthart.org">Project Hart</a></h3>
+        <span class="project-timeline">August - November 2015 </span>
+      </header>
+    
+      <div class="col">
+        <p>I was excited to take on the challenge of developing a custom website for a new non-profit organization that I would later join as a founding team member. The team wanted a clean, friendly website that would inform visitors of the organization's mission and encourage donations of e-readers that are redistributed to children in need of educational resources.</p>
+
+        <p>I worked alongside the team in researching topics like search engine optimization (SEO), calls to action (CTA), and digital marketing strategies. I then carried out designing and developing the first iterations of the website using custom CSS on top of Bootstrap, not having a great deal of experience with modern CSS layout techniques at the time. As the team grew in size, we improved some design elements and worked together to create and refine the site's content.</p>
+
+        <p>The website was originally built as a server-side application with Node.js and Express, with expectations to build out a set of tools for the organization. However, after first setting up and deploying the site to a Linux server on DigitalOcean, I decided that a template-driven static site was a more appropriate solution for the needs of the team.</p>
+
+        <a href="https://projecthart.org" class="website-link">projecthart.org <span>&rsaquo;</span></a>
+
+        <span class="tech-stack">
+          <strong>Technology Stack</strong>
+          <ul>
+            <li>Sass</li>
+            <li>CSS3</li>
+            <li>Bootstrap</li>
+            <li>Jade</li>
+            <li>HTML5</li>
+            <li>jQuery</li>
+            <li>Gulp</li>
+            <li>Linux VPS</li>
+          </ul>
+        </span>
+
+      </div>
+      <div class="col">
+
+        <a href="img/projects/project-hart.png">
+          <img src="img/projects/project-hart.png" alt="Screenshot of the Project Hart website" class="screenshot">
+        </a>
+
+        <a href="img/projects/project-hart-mobile.png">
+          <img src="img/projects/project-hart-mobile.png" alt="Screenshot of the Project Hart website" class="screenshot mobile">
+        </a>
+
+        <a href="img/projects/project-hart-mobile-2.png">
+          <img src="img/projects/project-hart-mobile-2.png" alt="Screenshot of the Project Hart website" class="screenshot mobile">
+        </a>
+
+      </div>
+    
+    </div>
+    
+  </section>
+
+  <div class="content-container">
+    <h2 class="section-title">A little about me</h2>
+
+    <div class="card about">
+      <img src="img/clayton-locher-headshot.jpg" alt="Photo of Clayton Locher" id="headshot">
+      <p>I recently graduated from the University of Illinois at Urbana-Champaign with a degree in economics. Without hesitation, I decided to follow my passion for web development, and I couldn't be more excited to launch a career doing what I love.</p>
+      <p>I'm currently looking for opportunities to join a <strong>fast-paced</strong>, <strong>passionate</strong> team at a growing tech company as a front-end or full-stack developer. If you think I'd be a good fit for your team, <a href="mailto:claytonlocher@gmail.com"><strong>I'd love to hear from you</strong></a>.</p>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <span>Crane by Kenneth Von Alt from the Noun Project</span>
+    <span id="copyright">&copy; Clayton Locher</span>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
 </html>
