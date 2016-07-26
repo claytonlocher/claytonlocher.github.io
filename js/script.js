@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
   var downArrow = document.querySelector('.down-arrow');
 
   var scrollHandler = function() {
-    socialIcons.style.right = '30px';
+    socialIcons.style.right = '20px';
     downArrow.style.display = 'none';
     window.removeEventListener('scroll', scrollHandler);
   };
