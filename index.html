@@ -54,29 +54,29 @@
     <div class="card">
 
       <header class="project-header">
-        <h3><a href="https://heartlandcookingandliving.herokuapp.com">Heartland Cooking &amp; Living</a></h3>
+        <h3><a href="https://heartland-24a44.firebaseapp.com/">Heartland Cooking &amp; Living</a></h3>
         <span class="project-timeline">In Development</span>
       </header>
 
       <div class="col">
 
-        <p>For the past several months, I've been working closely with my client to bring his vision for a unique culinary website to life. Although still in development, this project is an ongoing learning experience and a great opportunity to apply my skills in the following areas:
+        <p>I've been working closely with my client to bring his vision for a unique culinary website to life. Although still in development, this project is an ongoing learning experience and a great opportunity to apply my skills in the following areas:
         </p>
         <ul>
-          <li>UI/UX design</li>
-          <li>Server-side MVC architecture</li>
           <li>Custom CMS development</li>
+          <li>UI/UX design</li>
           <li>Code scalability and maintainability</li>
           <li>Workflow automation and version control</li>
           <li>Client-side optimization</li>
           <li>SEO</li>
           <li>Brand development and design</li>
         </ul>
-        <p>Initially, a client-side JavaScript MV* framework such as Angular or React might have been a great fit, due to the high level of desired user interactivity. However, I realized rendering the pages on the client would limit the visibility of content in search engines and on social media, both important factors for the success of any consumer-oriented website. Therefore, I decided to develop the application using my favorite server-side platform and framework, Node.js and Express.</p>
+        
+        <p>The content management system (CMS) is where the magic happens. I built a custom <a href="http://emberjs.com">Ember.js</a> application to facilitate entering and organizing the site's data in the form of recipes, menus, articles, and users. Backed by Google's NoSQL platform <a href="https://firebase.google.com/">Firebase</a>, the data store allows structural flexibility and real-time collaboration while working seamlessly with Ember Data's JSON API implementation. Ember's tooling, addon ecosystem, and opinions on application structure helped speed up development and bring a bit of joy to the workflow.</p>
           
-        <p>Also, the flexibility and developer-friendly nature of using a cloud NoSQL database lead me to choose Firebase for housing the site's data. JSON-like "documents" are written to the database (which has been optimized for scalable read operations) through a custom-built content management system (CMS). Later, when a user makes a request, the Express application talks to Firebase through its Node.js API, fetches the dynamic content, and then renders the page on the server and sends it back to the client.</p>
+        <p>After exploring a vast array of options for delivering content to users, I decided to also re-build the user-facing portion of the site as an Ember application, taking advantage of common data models and framework idioms to once again speed up the development process. With content visibility being so important in this project, I decided to utilize the emerging server-side rendering tool <a href="https://www.ember-fastboot.com/">Ember FastBoot</a>. FastBoot runs the isomorphic Ember application on a Node.js server and renders content to users, search engines, and social media before the single-page application (SPA) takes over on the client.</p>
 
-        <a href="https://heartlandcookingandliving.herokuapp.com" class="website-link">See it live <span>&rsaquo;</span></a>
+        <a href="https://heartland-24a44.firebaseapp.com/" class="website-link">See it live <span>&rsaquo;</span></a>
 
       </div>
 
@@ -85,15 +85,14 @@
         <span class="tech-stack">
           <strong>Technology Stack</strong>
           <ul>
+            <li>Ember.js</li>
+            <li>Firebase (NoSQL)</li>
             <li>Node.js</li>
             <li>Express</li>
-            <li>Firebase (NoSQL)</li>
-            <li>Jade/Pug</li>
             <li>Sass</li>
             <li>jQuery</li>
             <li>CSS3</li>
             <li>HTML5</li>
-            <li>Gulp</li>
             <li>Git</li>
           </ul>
         </span>
